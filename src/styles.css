@@ -6,15 +6,65 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  background: #ddd;
+}
 
-  /*
-   * CSS image reference example.
-   */
-  background-image: url('./images/bg-pattern.png');
+h1 {
+  text-align: center;
+}
+
+input {
+  flex: auto;
+  background: #eee;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+input:focus-visible {
+  outline: none;
+}
+.block {
+  width: 500px;
+  margin: 2em auto;
+}
+
+.country_list, .country_single {
+  background: #eee;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.country_single {
+  display: flex;
+}
+img {
+  display: block;
+  width: 120px;
+  height: 76px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.country_single_items li {
+  display: flex;
+  font-size: 14px;
+}
+
+.country_single_items li span {
+  margin-right: 5px;
+  font-weight: bold;
 }
