@@ -23,6 +23,25 @@ h1 {
   text-align: center;
 }
 
+.active_notice .pnotify-container {
+  display: flex;
+  margin: 5px 0;
+}
+
+.active_notice .pnotify-container div {
+  margin-right: 10px;
+  height: auto;
+}
+
+.active_notice .pnotify-container div.pnotify-content {
+  margin-left: 10px;
+}
+
+.active_notice .pnotify-container.brighttheme-error {
+  background-image: none;
+}
+
+
 input {
   flex: auto;
   background: #eee;
@@ -36,9 +55,22 @@ input {
 input:focus-visible {
   outline: none;
 }
+
+#notice {
+  width: 370px;
+  margin: 20px 0;
+  position: absolute;
+  left: 65%;
+  top: 5%;
+}
+
 .block {
   width: 500px;
   margin: 2em auto;
+}
+
+.country_single {
+  display: flex;
 }
 
 .country_list, .country_single {
@@ -46,11 +78,10 @@ input:focus-visible {
   padding: 10px;
   margin: 20px 0;
   border-radius: 5px;
+  display: none;
 }
 
-.country_single {
-  display: flex;
-}
+
 img {
   display: block;
   width: 120px;
